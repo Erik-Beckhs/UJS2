@@ -13,16 +13,69 @@
 	  <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <style>
+      @media screen and (max-width: 1200px) {  
+    nav {   
+        height: auto;
+        width: 100%;  
+    }  
+    nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;
+        margin: 0;
+        padding: 0;  
+    }  
+    nav li {  
+        width: 100%;  
+        float: left;  
+        background-color: #242a2c; 
+        position: relative;
+        text-align: center;
+    }
+    nav ul li a {  
+        width: 100%;  
+        float: left;  
+        background-color: #242a2c; 
+        position: relative;
+        padding: 25px 0; 
+        text-align: center;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    }
+    nav ul li a.last {  
+        border-bottom: none;
+    }
+    .laptop-placeholder img {
+        max-width: 80%;
+    }
+}  
+
+      @media only screen and (max-width : 1200px) {  
+          nav {  
+              border-bottom: 0;  
+          }  
+          nav ul {  
+              display: none;  
+              height: auto;  
+          }
+          .pullcontainer {
+            width: 100%;
+          text-align: right;
+          padding: 20px 20px 0 0;
+          }   
+          .pullcontainer a#pull {  
+              display: block;  
+              width: 100%;
+              color: #242a2c;   
+          }   
+      }  
+    </style>
   </head>
   <body>
 		<header class="clearfix">
-		    <div class="logo col-md-3"><h2 class="logo-text">UJS</h2></div>
+		    <div class="logo col-md-3">
+          <h2 class="logo-text">UJS</h2>
+        </div>
 		    <nav class="clearfix">
             <ul>
                 <li><a href="#" class="active">Inicio</a></li>
@@ -35,7 +88,8 @@
             </ul>
         </nav>
         <div class="pullcontainer">
-          <a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+          <a href="#" id="pull"><i class="fa fa-bars fa-2x">
+                      </i></a>
         </div>     
 		</header>
     <div class="banner">
